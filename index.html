@@ -36,7 +36,7 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function() {
           navigator.serviceWorker
-            .register("/sw.js")
+            .register("sw.js")
             .then(function(registration) {
               // Registration was successful
               console.log("ServiceWorker registration successful with scope: ", registration.scope);
@@ -49,7 +49,7 @@
       }
     </script>
     <!-- service worker js -->
-    <script src="/sw.js"></script>
+    <script src="sw.js"></script>
     <style>
       img {
         max-width: 100%;
@@ -61,9 +61,9 @@
     <p>Photo by Benjamin Suter from Pexels</p>
     <img src="https://images.pexels.com/photos/2225228/pexels-photo-2225228.jpeg" alt="" />
     <p>即時更新</p>
-    <img src="https://f108b946.ngrok.io/icon/icon-192.png" alt="" />
-    <img src="https://f108b946.ngrok.io/icon/ios-icon-192.jpg" alt="" />
-    <img src="https://f108b946.ngrok.io/icon/icon-512.png" alt="" />
-    <img src="https://f108b946.ngrok.io/icon/ios-icon-512.jpg" alt="" />
+    <img src="icon/icon-192.png" alt="" />
+    <img src="icon/ios-icon-192.jpg" alt="" />
+    <img src="icon/icon-512.png" alt="" />
+    <img src="icon/ios-icon-512.jpg" alt="" />
   </body>
 </html>
