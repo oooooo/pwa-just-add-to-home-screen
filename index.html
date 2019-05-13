@@ -63,11 +63,20 @@
   <body>
     <pre>
       test:
-      common respondWith
+
       ---
       Error while trying to use the following icon from the Manifest:
       https://oooooo.github.io/pwa-just-add-to-home-screen/icon/icon-192.png
       (Download error or resource isn't a valid image)
+      ---
+      common respondWith:
+
+      Current page does not respond with a 200 when offline
+      If you're building a Progressive Web App, consider using a service worker so that your app can work offline.
+
+      start_url does not respond with a 200 when offline
+      Unable to fetch start URL via service worker.
+
     </pre>
     <h1>pwa - add to home screen</h1>
     <img src="https://oooooo.github.io/pwa-just-add-to-home-screen/icon/icon-192.png" alt="" />
