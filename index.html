@@ -6,29 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>pwa add to home screen</title>
     <!-- 參考資料 https://hackmd.io/Zf3XAdjxTeqXG7W_y-PrZw?both -->
-    <!-- pwa tags must -->
+    <!--
+      pwa add to home 基本:
+    -->
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#f8bbd0" />
+    <!-- - 同 manifest theme-color -->
     <link rel="apple-touch-icon" sizes="192x192" href="icon/ios-icon-192.jpg" />
-    <!-- 覆蓋？ -->
-    <!-- <link rel="icon" sizes="192x192" href="icon/icon-192.png" />
-    <link rel="icon" sizes="512x512" href="icon/icon-512.png" /> -->
-    <!-- mac os -->
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- - ios basic setting  -->
+
+    <!--
+      pwa add to home 選配：
+    -->
+    <!-- 同 manifest icons 設定 -->
+    <link rel="icon" sizes="192x192" href="icon/icon-192.png" />
+    <link rel="icon" sizes="512x512" href="icon/icon-512.png" />
+    <!-- mac os settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="iosmata" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#6a1b9a" />
+    <!-- mac os icons 多尺寸 -->
     <link rel="apple-touch-startup-image" href="icon/ios-icon-512.jpg" />
     <link rel="apple-touch-icon" href="icon/ios-icon-192.jpg" />
     <link rel="apple-touch-icon" sizes="120x120" href="icon/ios-icon-192.jpg" />
-    <link rel="apple-touch-icon" sizes="152x152" href="icon/ios-icon-192.jpg" /> -->
-    <!-- win -->
-    <!-- <meta name="msapplication-TileColor" content="#4caf50" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/ios-icon-192.jpg" />
+    <!-- win settings -->
+    <meta name="msapplication-TileColor" content="#4caf50" />
     <meta name="msapplication-tileimage" content="icon/icon-512.png" />
+    <!-- win icons 多尺寸 -->
     <meta name="msapplication-square70x70logo" content="icon/icon-512.png" />
     <meta name="msapplication-square150x150logo" content="icon/icon-512.png" />
     <meta name="msapplication-square310x310logo" content="icon/icon-512.png" />
-    <meta name="msapplication-wide310x150logo" content="icon/icon-512.png" /> -->
+    <meta name="msapplication-wide310x150logo" content="icon/icon-512.png" />
     <!-- end pwa tags -->
+
     <!-- 主線程 -->
     <script>
       // 註冊服務工作線程
@@ -49,8 +60,10 @@
         });
       }
     </script>
+
     <!-- service worker js -->
     <script src="sw.js"></script>
+
     <style>
       pre,
       img {
