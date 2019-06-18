@@ -45,20 +45,20 @@
       // 註冊服務工作線程
       // 要安裝服務工作線程，您需要通過在頁面中對其進行註冊來啓動安裝。
       // 這將告訴瀏覽器服務工作線程 JavaScript 文件的位置。
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function() {
-          navigator.serviceWorker
-            .register("sw.js")
-            .then(function(registration) {
-              // Registration was successful
-              console.log("ServiceWorker registration successful with scope: ", registration.scope);
-            })
-            .catch(function(err) {
-              // registration failed :(
-              console.log("ServiceWorker registration failed: ", err);
-            });
-        });
-      }
+      // if ("serviceWorker" in navigator) {
+      //   window.addEventListener("load", function() {
+      //     navigator.serviceWorker
+      //       .register("sw.js")
+      //       .then(function(registration) {
+      //         // Registration was successful
+      //         console.log("ServiceWorker registration successful with scope: ", registration.scope);
+      //       })
+      //       .catch(function(err) {
+      //         // registration failed :(
+      //         console.log("ServiceWorker registration failed: ", err);
+      //       });
+      //   });
+      // }
     </script>
 
     <!-- service worker js -->
